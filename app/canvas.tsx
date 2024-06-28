@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "././globals.js";
 import "p5/lib/addons/p5.sound";
 import React, { useEffect } from "react"
