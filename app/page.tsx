@@ -25,8 +25,7 @@ export default function Home() {
     }
   } 
   return (
-    <div className="text-center">
-      <p>株価 to sound</p>
+    <div className="text-center mt-4">
       <div className="mx-auto flex justify-center">
         <input value={stockcode} onChange={(e) => setStockCode(e.target.value)} type="text" placeholder="シンボル" className="w-16 mx-2 border p-2"></input>
         <div onClick={getStockPrice} className="w-28 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -39,8 +38,6 @@ export default function Home() {
           <CanvasComponent stockprice={stockprice} stockcode={stockcode} />
         </div>
       </main>
-
-      <small className="text-gray-400 text-xs">{JSON.stringify(stockprice)}</small>
 
     </div>
 
